@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>export search</title>
+</head>
+<body>
+    <!-- search page header -->
+    <header class="text-gray-600 bg-[#6F2232] body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <img src="./img/6206720-removebg-preview.png" alt="img" class="w-14">
+            <span class="ml-3 text-white font-bold text-2xl ">ExportData</span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 text-white font-bold md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-400">PRODUCT</a>
+            <a class="mr-5 hover:text-gray-400">DATA</a>
+            <a class="mr-5 hover:text-gray-400">SEARCH DATA</a>
+            <a class="mr-5 hover:text-gray-400">COMPANY</a>
+          </nav>
+          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Login
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+
+          <button class="inline-flex ml-3 items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">sign Up
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+    </header>
+
+<div class=" mt-4 bg-gradient-to-r from-[#A71D31] to-[#3F0D12] h-600px" >
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-white">Indonesia | Steal Import Statistics</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-white  text-base">Monitor your competitor business through Indonesia import data of steal which is based on actual shipment details compiled by Indonesia customs. Our steal import statistics covers importers name.
+            </p>
+          </div>
+        </div>
+      </section>
+</div>
+
+
+<!-- table -->
+
+
+<div id="table" class="relative  overflow-x-auto h-[446px]  shadow-md sm:rounded-lg">
+    <table class="w-full h-[30%] text-sm text-left text-white bg-white text-black dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3 bg-gray-50 dark:bg-gray-800">
+                    Product name
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Color
+                </th>
+                <th scope="col" class="px-6 py-3 text-black bg-gray-50 dark:bg-gray-800">
+                    Category
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Price
+                </th><th scope="col" class="px-6 text-black bg-gray-50 py-3">
+                    Date
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple MacBook Pro 17"
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Silver
+                </td>
+                <td class="px-6 py-4 bg-gray-50 text-black dark:bg-gray-800">
+                    Laptop
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>2999
+                </td>
+            </th>
+            <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                16/06/2022
+            </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Microsoft Surface Pro
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    White
+                </td>
+                <td class="px-6 py-4 bg-gray-50 text-black dark:bg-gray-800">
+                    Laptop PC
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>1999
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    17/06/2022
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200  dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Magic Mouse 2
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Black
+                </td>
+                <td class="px-6 py-4 text-black bg-gray-50 dark:bg-gray-800">
+                    Accessories
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>99
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    18/06/2022
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Google Pixel Phone
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Gray
+                </td>
+                <td class="px-6 py-4 text-black bg-gray-50 dark:bg-gray-800">
+                    Phone
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>799
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    19/06/2022
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700 ">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple Watch 5
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Red
+                </td>
+                <td class="px-6 py-4 text-black  bg-gray-50 dark:bg-gray-800">
+                    Wearables
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>999
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    12/07/2022
+                </th>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple MacBook Pro 17"
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Silver
+                </td>
+                <td class="px-6 py-4 bg-gray-50 text-black dark:bg-gray-800">
+                    Laptop
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>2999
+                </td>
+            </th>
+            <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                16/07/2022
+            </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Microsoft Surface Pro
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    White
+                </td>
+                <td class="px-6 py-4 bg-gray-50 text-black dark:bg-gray-800">
+                    Laptop PC
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>1999
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    18/08/2022
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200  dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Magic Mouse 2
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Black
+                </td>
+                <td class="px-6 py-4 text-black bg-gray-50 dark:bg-gray-800">
+                    Accessories
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>99
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    26/08/2022
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Google Pixel Phone
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Gray
+                </td>
+                <td class="px-6 py-4 text-black bg-gray-50 dark:bg-gray-800">
+                    Phone
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>799
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    27/08/2022
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple Watch 5
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Red
+                </td>
+                <td class="px-6 py-4 text-black  bg-gray-50 dark:bg-gray-800">
+                    Wearables
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>999
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    30/09/2022
+                </th>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple MacBook Pro 17"
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Silver
+                </td>
+                <td class="px-6 py-4 bg-gray-50 text-black dark:bg-gray-800">
+                    Laptop
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>2999
+                </td>
+            </th>
+            <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                1/10/2022
+            </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Microsoft Surface Pro
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    White
+                </td>
+                <td class="px-6 py-4 bg-gray-50 text-black dark:bg-gray-800">
+                    Laptop PC
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>1999
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    2/10/2022
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200  dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Magic Mouse 2
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Black
+                </td>
+                <td class="px-6 py-4 text-black bg-gray-50 dark:bg-gray-800">
+                    Accessories
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>99
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    3/11/2022
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Google Pixel Phone
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Gray
+                </td>
+                <td class="px-6 py-4 text-black bg-gray-50 dark:bg-gray-800">
+                    Phone
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>799
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    4/12/2022
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple Watch 5
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Red
+                </td>
+                <td class="px-6 py-4 text-black  bg-gray-50 dark:bg-gray-800">
+                    Wearables
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>999
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    10/12/2022
+                </th>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple MacBook Pro 17"
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Silver
+                </td>
+                <td class="px-6 py-4 bg-gray-50 text-black dark:bg-gray-800">
+                    Laptop
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>2999
+                </td>
+            </th>
+            <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                2/01/2023
+            </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Microsoft Surface Pro
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    White
+                </td>
+                <td class="px-6 py-4 bg-gray-50 text-black dark:bg-gray-800">
+                    Laptop PC
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>1999
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    3/01/2023
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200  dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Magic Mouse 2
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Black
+                </td>
+                <td class="px-6 py-4 text-black bg-gray-50 dark:bg-gray-800">
+                    Accessories
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>99
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    5/01/2023
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Google Pixel Phone
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Gray
+                </td>
+                <td class="px-6 py-4 text-black bg-gray-50 dark:bg-gray-800">
+                    Phone
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>799
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    6/01/2023
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple Watch 5
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Red
+                </td>
+                <td class="px-6 py-4 text-black  bg-gray-50 dark:bg-gray-800">
+                    Wearables
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>999
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    10/1/2023
+                </th>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple MacBook Pro 17"
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Silver
+                </td>
+                <td class="px-6 py-4 bg-gray-50 text-black dark:bg-gray-800">
+                    Laptop
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>2999
+                </td>
+            </th>
+            <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                11/01/2023
+            </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Microsoft Surface Pro
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    White
+                </td>
+                <td class="px-6 py-4 bg-gray-50 text-black dark:bg-gray-800">
+                    Laptop PC
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>1999
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    10/02/2023
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200  dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Magic Mouse 2
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Black
+                </td>
+                <td class="px-6 py-4 text-black bg-gray-50 dark:bg-gray-800">
+                    Accessories
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>99
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    11/02/2023
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Google Pixel Phone
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Gray
+                </td>
+                <td class="px-6 py-4 text-black bg-gray-50 dark:bg-gray-800">
+                    Phone
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>799
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    13/02/2023
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple Watch 5
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Red
+                </td>
+                <td class="px-6 py-4 text-black  bg-gray-50 dark:bg-gray-800">
+                    Wearables
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>999
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    14/02/2022
+                </th>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple MacBook Pro 17"
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Silver
+                </td>
+                <td class="px-6 py-4 bg-gray-50 text-black dark:bg-gray-800">
+                    Laptop
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>2999
+                </td>
+            </th>
+            <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                15/02/2022
+            </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Microsoft Surface Pro
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    White
+                </td>
+                <td class="px-6 py-4 bg-gray-50 text-black dark:bg-gray-800">
+                    Laptop PC
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>1999
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    16/02/2023
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200  dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Magic Mouse 2
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Black
+                </td>
+                <td class="px-6 py-4 text-black bg-gray-50 dark:bg-gray-800">
+                    Accessories
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>99
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    17/02/2023
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Google Pixel Phone
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Gray
+                </td>
+                <td class="px-6 py-4 text-black bg-gray-50 dark:bg-gray-800">
+                    Phone
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>799
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    18/02/2023
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple Watch 5
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Red
+                </td>
+                <td class="px-6 py-4 text-black  bg-gray-50 dark:bg-gray-800">
+                    Wearables
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>999
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    19/02/2023
+                </th>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple MacBook Pro 17"
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Silver
+                </td>
+                <td class="px-6 py-4 bg-gray-50 text-black dark:bg-gray-800">
+                    Laptop
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>2999
+                </td>
+            </th>
+            <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                20/02/2023
+            </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Microsoft Surface Pro
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    White
+                </td>
+                <td class="px-6 py-4 bg-gray-50 text-black dark:bg-gray-800">
+                    Laptop PC
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>1999
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    20/02/2023
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200  dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Magic Mouse 2
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Black
+                </td>
+                <td class="px-6 py-4 text-black bg-gray-50 dark:bg-gray-800">
+                    Accessories
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>99
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    21/02/2023
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Google Pixel Phone
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Gray
+                </td>
+                <td class="px-6 py-4 text-black bg-gray-50 dark:bg-gray-800">
+                    Phone
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>799
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    22/02/2023
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple Watch 5
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Red
+                </td>
+                <td class="px-6 py-4 text-black  bg-gray-50 dark:bg-gray-800">
+                    Wearables
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>999
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    1/03/2023
+                </th>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple MacBook Pro 17"
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Silver
+                </td>
+                <td class="px-6 py-4 bg-gray-50 text-black dark:bg-gray-800">
+                    Laptop
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>2999
+                </td>
+            </th>
+            <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                2/03/2023
+            </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Microsoft Surface Pro
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    White
+                </td>
+                <td class="px-6 py-4 bg-gray-50 text-black dark:bg-gray-800">
+                    Laptop PC
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>1999
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    3/03/2023
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200  dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Magic Mouse 2
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Black
+                </td>
+                <td class="px-6 py-4 text-black bg-gray-50 dark:bg-gray-800">
+                    Accessories
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>99
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    4/03/2023
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Google Pixel Phone
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Gray
+                </td>
+                <td class="px-6 py-4 text-black bg-gray-50 dark:bg-gray-800">
+                    Phone
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>799
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    5/03/2023
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple Watch 5
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Red
+                </td>
+                <td class="px-6 py-4 text-black  bg-gray-50 dark:bg-gray-800">
+                    Wearables
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>999
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    6/03/2023
+                </th>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple MacBook Pro 17"
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Silver
+                </td>
+                <td class="px-6 py-4 bg-gray-50 text-black dark:bg-gray-800">
+                    Laptop
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>2999
+                </td>
+            </th>
+            <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                7/03/2023
+            </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Microsoft Surface Pro
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    White
+                </td>
+                <td class="px-6 py-4 bg-gray-50 text-black dark:bg-gray-800">
+                    Laptop PC
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>1999
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    8/03/2023
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200  dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Magic Mouse 2
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Black
+                </td>
+                <td class="px-6 py-4 text-black bg-gray-50 dark:bg-gray-800">
+                    Accessories
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>99
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    9/03/2023
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Google Pixel Phone
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Gray
+                </td>
+                <td class="px-6 py-4 text-black bg-gray-50 dark:bg-gray-800">
+                    Phone
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>799
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    10/03/2023
+                </th>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple Watch 5
+                </th>
+                <td class="px-6 py-4 price text-black">
+                    Red
+                </td>
+                <td class="px-6 py-4 text-black  bg-gray-50 dark:bg-gray-800">
+                    Wearables
+                </td>
+                <td class="px-6 py-4 price text-black">
+                    <span>$</span>999
+                </td>
+                <th scope="col" class="px-6 bg-gray-50 text-black py-3 date">
+                    11/03/2023
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<!-- footer -->
+
+<footer class="text-gray-400 bg-[#6F2232] body-font mt-6">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap md:text-left text-center order-first">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">COMPANY</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-400 hover:text-white">ABOUT US</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">HOW WE HELP</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">PRODUCT AND SERVICES</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">DATA AVAILABILITY</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">OUR DATA</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-400 hover:text-white">SEARCH LIVE DATA</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">DOWNLOAD DATA SAMPLES</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">ASIA TRADE DATA</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">SOUTH AMERICA TRADE DATA</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">MORE RESOURCES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-400 hover:text-white">GOBAL PRODUCT WISE DATA</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">SEARCH IMPORTERS GLOBALLY</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">SEARCH EXPORTERS GLOBALLY</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">SEARCH MARKET TRENDS</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SUBSCRIBE</h2>
+          <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+            <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+              <label for="footer-field" class="leading-7 text-sm text-gray-400">Email</label>
+              <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:bg-transparent focus:ring-2 focus:ring-indigo-900 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-[#242B2E] border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Send</button>
+          </div>
+          <p class="text-gray-500 text-sm mt-2 md:text-left text-center">Latest updated data
+            <br class="lg:block hidden">directly on your email
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800 bg-opacity-75">
+      <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+            <img src="./img/6206720-removebg-preview.png" class="w-10" alt="img">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">Indi-Exports</span>
+        </a>
+        <p class="text-sm text-gray-400 sm:ml-6 sm:mt-0 mt-4">© 2023 Exports —
+          <a href="https://twitter.com/" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@Exports</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="text-gray-400">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+</html>
